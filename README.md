@@ -7,6 +7,7 @@ AQILITY (Air Quality Acquisition Ability)
 
 
 ##Synopsis:
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/EAGLEScreenshot.png  "AQILITY")
 This is the open source version of the AQILITY, the free, crowd-sourced software and hardware platform for air quality detection and the upload of data to the cloud.
 
 Sample processed (live) data which is processed by the MATLAB program included in this repo can be accessed [here](https://thingspeak.com/channels/56281).
@@ -26,6 +27,8 @@ Features:
 This system collects real time data from the air with several onboard sensors and relays the data from the microcontroller to the Raspberry Pi which caches all the data collected. This data is periodically uploaded onto the ThingSpeak platform, which is then analysed by the MATLAB code and the new data inserted into another ThingSpeak channel to display the actual values. The calculation from ug/m<sup>3</sup> to official AQI is a piecewise linear function provided by the EPA (Research paper [here](http://www3.epa.gov/ttn/oarpg/t1/memoranda/rg701.pdf)). The system provides an LCD screen to display live unprocessed values for easy monitoring.
 
 A full flowchart of the system can be seen as below:
+
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/FlowDiagram.png "Flowchart")
 
 1. Raspberry Pi sends a single unique character (a single dot, ".", ASCII code 46) to the microcontroller
 2. Microcontroller has a cached copy of all the recent data taken over a certain timeframe and sends the cached data to the Pi. This data is already formatted in the CSV format.
@@ -52,7 +55,7 @@ This system is only tested on Raspberry Pis and the ATmega328P chip. There will 
 * The gas sensors have NO calibration, which means that there is currently no logic implemented for the equation of output voltage of gas sensors to corresponding concentrations of gases.
 * The Python code on the Raspberry Pi does not automatically archive or delete old data, and requires manual work to clear old data. This is a possible area of improvement and we welcome you to submit a pull request to implement such a feature.
 * Dependencies must be manually installed and the GPIO port manually configured, which reduces code reusability and portability. Suggest making a single shell script to accomplish all of that.
-* Python scripts must be specified in /etc/rc.local for it to automatically start when the Raspberry Pi is booted up.
+* Python scripts must be specified in `/etc/rc.local` for it to automatically start when the Raspberry Pi is booted up.
 
 
 ##Dependencies:
