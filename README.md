@@ -3,11 +3,14 @@
 Made by StatiX Industries
 
 ##Name:
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/AQILITYLogo.png)
+
 AQILITY (Air Quality Acquisition Ability)
 
 
 ##Synopsis:
 ![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/EAGLEScreenshot.png  "AQILITY")
+
 This is the open source version of the AQILITY, the free, crowd-sourced software and hardware platform for air quality detection and the upload of data to the cloud.
 
 Sample processed (live) data which is processed by the MATLAB program included in this repo can be accessed [here](https://thingspeak.com/channels/56281).
