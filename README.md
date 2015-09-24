@@ -1,10 +1,8 @@
-**AQILITY**
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/AQILITYLogo.png)
 =========================
 Made by StatiX Industries
 
 ##Name:
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/AQILITYLogo.png)
-
 AQILITY (Air Quality Acquisition Ability)
 
 
