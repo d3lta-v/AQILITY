@@ -10,7 +10,7 @@ This is the open source version of the AQILITY, the free, crowd-sourced software
 
 ####How to access live data from the currently deployed sensor:
 
-**Live** data which is processed by the MATLAB program included in this repo can be accessed on ThingSpeak [here](https://thingspeak.com/channels/56281).
+**Live** data which is processed by the MATLAB program included in this repo can be accessed on ThingSpeak [here](https://thingspeak.com/channels/56281). NOTE: The picture below is NOT the actual live data.
 
 ![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/Processed.png)
 
