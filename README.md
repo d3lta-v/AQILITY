@@ -76,6 +76,6 @@ This system is only tested on Raspberry Pis and the ATmega328P chip. There will 
 ##License:
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/oshw-logo.png  "Open Source Hardware Initiative")
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/oshw_logo.png  "Open Source Hardware Initiative")
 
 Copyright (C) StatiX Industries 2014-2016
