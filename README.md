@@ -1,9 +1,9 @@
 ![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/AQILITYLogo.png)
-=========================
+---
 Made by StatiX Industries
 
 ##Name:
-AQILITY (Air Quality Acquisition Ability)
+####AQILITY (Air Quality Acquisition Ability)
 
 
 ##Synopsis:
@@ -11,12 +11,18 @@ AQILITY (Air Quality Acquisition Ability)
 
 This is the open source version of the AQILITY, the free, crowd-sourced software and hardware platform for air quality detection and the upload of data to the cloud.
 
-Sample processed (live) data which is processed by the MATLAB program included in this repo can be accessed [here](https://thingspeak.com/channels/56281).
+Sample processed **(live)** data which is processed by the MATLAB program included in this repo can be accessed [here](https://thingspeak.com/channels/56281).
+
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/Processed.png)
+
 Raw data (which may have errors) can be accessed [here](https://thingspeak.com/channels/31799)
+
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/Raw.png)
 
 The AVR subsystem of this system uses a forked version of the [DustDuino](http://publiclab.org/wiki/dustduino) code base (licensed under the CC BY-SA 3.0 license) for an Arduino-compatible particulate sensing system.
 
-Features:
+####Features:
+
 1. Has an LCD to display the air quality parameters dynamically on the sensor board itself
 2. Automatically uploads air quality data to the cloud (ThingSpeak.com)
 3. Relies on a Arduino-Raspberry Pi hybrid to achieve both long term data storage and better data transfer options such as through a cellular/3G USB dongle
@@ -25,7 +31,9 @@ Features:
 
 
 ##Description:
-This system collects real time data from the air with several onboard sensors and relays the data from the microcontroller to the Raspberry Pi which caches all the data collected. This data is periodically uploaded onto the ThingSpeak platform, which is then analysed by the MATLAB code and the new data inserted into another ThingSpeak channel to display the actual values. The calculation from ug/m<sup>3</sup> to official AQI is a piecewise linear function provided by the EPA (Research paper [here](http://www3.epa.gov/ttn/oarpg/t1/memoranda/rg701.pdf)). The system provides an LCD screen to display live unprocessed values for easy monitoring.
+This system collects real time data from the air with several onboard sensors and relays the data from the microcontroller to the Raspberry Pi which caches all the data collected. This data is periodically uploaded onto the ThingSpeak platform, which is then analysed by the MATLAB code and the new data inserted into another ThingSpeak channel to display the actual values.
+
+The calculation from ug/m<sup>3</sup> to official AQI is a piecewise linear function provided by the EPA (research paper [here](http://www3.epa.gov/ttn/oarpg/t1/memoranda/rg701.pdf)). The system provides an LCD screen to display live unprocessed values for easy monitoring.
 
 A full flowchart of the system can be seen as below:
 
@@ -67,5 +75,7 @@ This system is only tested on Raspberry Pis and the ATmega328P chip. There will 
 
 ##License:
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/oshw-logo.png  "Open Source Hardware Initiative")
 
 Copyright (C) StatiX Industries 2014-2016
