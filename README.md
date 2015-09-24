@@ -12,13 +12,13 @@ This is the open source version of the AQILITY, the free, crowd-sourced software
 
 **Live** data which is processed by the MATLAB program included in this repo can be accessed on ThingSpeak [here](https://thingspeak.com/channels/56281).
 
-<iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/56281/charts/1"></iframe>
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/Processed.png)
 
-Raw data (which may have errors) can be accessed [here](https://thingspeak.com/channels/31799), below is a live time sample of the data.
+Raw data (which may have errors) can be accessed [here](https://thingspeak.com/channels/31799), below is a sample of what to expect (this data is unprocessed and flawed, so please do not use this as official readings).
 
-<iframe width="450" height="250" style="border: 1px solid #cccccc;" src="https://api.thingspeak.com/channels/31799/charts/1"></iframe>
+![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/Raw.png)
 
-The AVR subsystem of this system uses a forked version of the [DustDuino](http://publiclab.org/wiki/dustduino) code base (licensed under the CC BY-SA 3.0 license) for an Arduino-compatible particulate sensing system. Big props to them for doing the best work in the world.
+The AVR subsysem of this system uses a forked version of the [DustDuino](http://publiclab.org/wiki/dustduino) code base (licensed under the CC BY-SA 3.0 license) for an Arduino-compatible particulate sensing system. Big props to them for doing the best work in the world.
 
 
 ##Description:
