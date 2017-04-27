@@ -2,13 +2,13 @@
 
 by StatiX Electromechanics, a subsidiary company of [StatiX Industries](https://statixind.net)
 
-#AQILITY (Air Quality Acquisition Ability)
+# AQILITY (Air Quality Acquisition Ability)
 
 ![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/EAGLEScreenshot.png  "AQILITY")
 
 This is the open source version of the AQILITY, the free, crowd-sourced software and hardware platform for air quality detection and the upload of data to the cloud. We were simply people who thought we could do something about the Singapore/Indonesian transboundary haze, and this is what we've made. Enjoy!
 
-####How to access live data from the currently deployed sensor:
+#### How to access live data from the currently deployed sensor:
 
 **Live** data which is processed by the MATLAB program included in this repo can be accessed on ThingSpeak [here](https://thingspeak.com/channels/56281). NOTE: The picture below is NOT the actual live data.
 
@@ -21,7 +21,7 @@ Raw data (which may have errors) can be accessed [here](https://thingspeak.com/c
 The AVR subsysem of this system uses a forked version of the [DustDuino](http://publiclab.org/wiki/dustduino) code base (licensed under the CC BY-SA 3.0 license) for an Arduino-compatible particulate sensing system. Big props to them for doing the best work in the world.
 
 
-##Description:
+## Description:
 This system collects real time data from the air with several onboard sensors and relays the data from the microcontroller to the Raspberry Pi which caches all the data collected. This data is periodically uploaded onto the ThingSpeak platform, which is then analysed by the MATLAB code and the new data inserted into another ThingSpeak channel to display the actual values.
 
 The calculation from ug/m<sup>3</sup> to official AQI is a piecewise linear function provided by the EPA (research paper [here](http://www3.epa.gov/ttn/oarpg/t1/memoranda/rg701.pdf)). The system provides an LCD screen to display live unprocessed values for easy monitoring.
@@ -39,7 +39,7 @@ A full flowchart of the system can be seen as below:
 7. The processed data is sent to the second ThingSpeak channel which houses all the processed data.
 
 
-####Features:
+#### Features:
 
 1. Has an LCD to display the air quality parameters dynamically on the sensor board itself
 2. Automatically uploads air quality data to the cloud (ThingSpeak.com)
@@ -48,17 +48,17 @@ A full flowchart of the system can be seen as below:
 5. The system has an initial waiting time, to wait for the AVR and the sensors to initialize and self-calibrate before taking readings.
 
 
-##Availability:
+## Availability:
 This system is only tested on Raspberry Pis and the ATmega328P chip. There will be no guarentees that the same code (built on the Arduino platform) will run properly on other Arduino platforms or even on other AVRs such as the XMega series. The ribbon cable connector on the offical board is customized for Raspberry Pi + series ONLY, but you can manually pinout the connector for the old 28-pin GPIO.
 
 
-##Author(s):
+## Author(s):
 * Chief Designer; Programmer: Pan Ziyue
 * R&D/Scientific Inquiry: Chow Zi Jie & Rachit Agrwal
 * The awesome open source folks at Adafruit and the [DustDuino Development Team](http://publiclab.org/wiki/dustduino)
 
 
-##Caveats:
+## Caveats:
 * Requires for the Raspberry Pi's UART port on the GPIO to be freed. More info [here](http://www.hobbytronics.co.uk/raspberry-pi-serial-port)
 * The code on the AVR seems to have a discrepancy of a factor of 10 for the PM2.5 concentration, which is then manually rectified by the MATLAB code. There may be a serious underlying problem with the original DustDuino code for the calculation of concentration, or lack of calibration of the sensor (which is supposed to be factory calibrated)
 * The use of a Raspberry Pi enforces the use of a 5V/3.3V logic level shifter to avoid damaging the Pi.
@@ -68,13 +68,13 @@ This system is only tested on Raspberry Pis and the ATmega328P chip. There will 
 * Python scripts must be pre-specified in `/etc/rc.local` for it to automatically start when the Raspberry Pi is booted up.
 
 
-##Dependencies:
+##  Dependencies:
 * [Adafruit_Python_CharLCD](https://github.com/adafruit/Adafruit_Python_CharLCD)
 * [DHT11 Library](http://playground.arduino.cc/Main/DHT11Lib)
 * PySerial (install with `sudo pip3 install pyserial`)
 * [httplib2](https://github.com/jcgregorio/httplib2)
 
-##License:
+## License:
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
 ![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/oshw_logo.png  "Open Source Hardware Initiative")
