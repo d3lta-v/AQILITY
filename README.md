@@ -1,10 +1,10 @@
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/AQILITYLogo.png)
+![alt text](Assets/AQILITYLogo.png)
 
 by StatiX Electromechanics, a subsidiary company of [StatiX Industries](https://statixind.net)
 
 # AQILITY (Air Quality Acquisition Ability)
 
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/EAGLEScreenshot.png  "AQILITY")
+![alt text](Assets/EAGLEScreenshot.png  "AQILITY")
 
 This is the open source version of the AQILITY, the free, crowd-sourced software and hardware platform for air quality detection and the upload of data to the cloud. We were simply people who thought we could do something about the Singapore/Indonesian transboundary haze, and this is what we've made. Enjoy!
 
@@ -12,11 +12,11 @@ This is the open source version of the AQILITY, the free, crowd-sourced software
 
 **Live** data which is processed by the MATLAB program included in this repo can be accessed on ThingSpeak [here](https://thingspeak.com/channels/56281). NOTE: The picture below is NOT the actual live data.
 
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/Processed.png)
+![alt text](Assets/Processed.png)
 
 Raw data (which may have errors) can be accessed [here](https://thingspeak.com/channels/31799), below is a sample of what to expect (this data is unprocessed and flawed, so please do not use this as official readings).
 
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/Raw.png)
+![alt text](Assets/Raw.png)
 
 The AVR subsysem of this system uses a forked version of the [DustDuino](http://publiclab.org/wiki/dustduino) code base (licensed under the CC BY-SA 3.0 license) for an Arduino-compatible particulate sensing system. Big props to them for doing the best work in the world.
 
@@ -28,7 +28,7 @@ The calculation from ug/m<sup>3</sup> to official AQI is a piecewise linear func
 
 A full flowchart of the system can be seen as below:
 
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/FlowDiagram.png "Flowchart")
+![alt text](Assets/FlowDiagram.png "Flowchart")
 
 1. Raspberry Pi sends a single unique character (a single dot, ".", ASCII code 46) to the microcontroller
 2. Microcontroller has a cached copy of all the recent data taken over a certain timeframe and sends the cached data to the Pi. This data is already formatted in the CSV format.
@@ -77,6 +77,6 @@ This system is only tested on Raspberry Pis and the ATmega328P chip. There will 
 ## License:
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
 
-![alt text](https://raw.githubusercontent.com/sammy0025/AQILITY/master/Assets/oshw_logo.png  "Open Source Hardware Initiative")
+![alt text](Assets/oshw_logo.png  "Open Source Hardware Initiative")
 
 Copyright (C) StatiX Industries 2014-2016
